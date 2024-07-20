@@ -51,7 +51,7 @@ jobs:
           python-version: "3.11"
       # desmume build deps
       - name: Install MacOS build deps
-        if: matrix.os == 'macos-11'
+        if: startsWith(matrix.os, 'macos-')
         run: |
           brew install coreutils gcc sdl2 meson glib
       - name: "Windows: Set env: AMD64"
