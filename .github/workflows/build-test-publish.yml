@@ -19,9 +19,8 @@ jobs:
           #  arch: aarch64
           - os: macos-11
             arch: x86_64
-          # broken:
-          #- os: macos-11
-          #  arch: arm64
+          - os: macos-14
+            arch: arm64
           - os: windows-2019
             arch: x86
           - os: windows-2019
